@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Evaluación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Formulario de Evaluación</h2>
+  <table border="1">
+    <thead>
+      <tr><th>Categoría</th><th>Parámetro</th><th>Cantidad</th><th>Puntaje</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">Formación Académica</td>
+        <td>Diplomado (2 puntos c/u, máx 4)</td>
+        <td><input type="number" class="cantidad" data-mult="2" data-max="4"></td>
+        <td><input type="number" class="puntaje" readonly></td>
+      </tr>
+      <tr>
+        <td>Especialidad (4 puntos c/u, máx 6)</td>
+        <td><input type="number" class="cantidad" data-mult="4" data-max="6"></td>
+        <td><input type="number" class="puntaje" readonly></td>
+      </tr>
+      <tr>
+        <td>Maestría (8 puntos c/u, máx 11)</td>
+        <td><input type="number" class="cantidad" data-mult="8" data-max="11"></td>
+        <td><input type="number" class="puntaje" readonly></td>
+      </tr>
+      <tr>
+        <td>Doctorado (12 puntos c/u, máx 12)</td>
+        <td><input type="number" class="cantidad" data-mult="12" data-max="12"></td>
+        <td><input type="number" class="puntaje" readonly></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Total:</strong> <span id="total">0</span> puntos</p>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

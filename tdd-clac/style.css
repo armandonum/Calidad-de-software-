@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 50px;
+  margin-right: 10px;
+}
+
+input:disabled {
+  background-color: #ccc;
+}
